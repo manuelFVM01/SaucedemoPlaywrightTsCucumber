@@ -1,0 +1,156 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "error-al-hacer-login;login-with-invalid-user-name-and-password",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "login with invalid user name and password",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1069663700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I open the login page",
+            "match": {
+              "location": "file:\\D:\\Programacion\\Autodidacta\\FrontSaucedmo\\src\\test\\steps\\login.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2106532300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I enter an invalid username and valid password",
+            "match": {
+              "location": "file:\\D:\\Programacion\\Autodidacta\\FrontSaucedmo\\src\\test\\steps\\login.steps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1302184999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "I should see a login error message",
+            "match": {
+              "location": "file:\\D:\\Programacion\\Autodidacta\\FrontSaucedmo\\src\\test\\steps\\login.steps.ts:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2016191800
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 461754200
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "error-al-hacer-login",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Error al hacer login",
+    "tags": [],
+    "uri": "src\\test\\features\\errorLogin.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "login-exitoso-en-la-página;login-with-valid-user-name-and-password",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "login with valid user name and password",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 916012500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I open the login page",
+            "match": {
+              "location": "file:\\D:\\Programacion\\Autodidacta\\FrontSaucedmo\\src\\test\\steps\\login.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1942675300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I enter a valid username and password",
+            "match": {
+              "location": "file:\\D:\\Programacion\\Autodidacta\\FrontSaucedmo\\src\\test\\steps\\login.steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1310009800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "I should be redirected to the inventory page",
+            "match": {
+              "location": "file:\\D:\\Programacion\\Autodidacta\\FrontSaucedmo\\src\\test\\steps\\login.steps.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2019384199
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 587214800
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-exitoso-en-la-página",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login exitoso en la página",
+    "tags": [],
+    "uri": "src\\test\\features\\login.feature"
+  }
+]
