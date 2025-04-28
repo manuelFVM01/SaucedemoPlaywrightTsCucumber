@@ -1,10 +1,9 @@
 {
     "default": {
-      "paths": ["src/test/features/*.feature"],  
+      "paths": ["src/Tests/*.feature"],  
       "dryRun": false,
       "require": [
-        "src/test/steps/*.ts" ,
-        "src/test/hooks/*.ts"
+        "src/Tests/**/*spec.ts"
       ],
       "requireModule": [
         "ts-node/register"  

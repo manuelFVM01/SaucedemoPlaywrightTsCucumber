@@ -4,51 +4,111 @@
     "elements": [
       {
         "description": "",
-        "id": "comprar-productos-del-carrito;buy-product-from-cart",
+        "id": "i-want-open-the-site-for-add-one-product-to-cart-and-then-buy-product-from-cart;add-products-to-cart",
         "keyword": "Scenario",
-        "line": 3,
+        "line": 6,
+        "name": "Add products to cart",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I navigate to the Website Home Page before login with user \"standard_user\" and password \"secret_sauce\"",
+            "match": {
+              "location": "file:\\D:\\basura\\SaucedemoPlaywrightTsCucumber\\src\\Tests\\HomeTest\\homeTest.spec.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2082661500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I click \"add-to-cart-sauce-labs-backpack\" to add new product",
+            "match": {
+              "location": "file:\\D:\\basura\\SaucedemoPlaywrightTsCucumber\\src\\Tests\\HomeTest\\homeTest.spec.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 100488799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I click \"add-to-cart-sauce-labs-bike-light\" to add new product",
+            "match": {
+              "location": "file:\\D:\\basura\\SaucedemoPlaywrightTsCucumber\\src\\Tests\\HomeTest\\homeTest.spec.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 104156100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "The cart should be say \"2\" items",
+            "match": {
+              "location": "file:\\D:\\basura\\SaucedemoPlaywrightTsCucumber\\src\\Tests\\HomeTest\\homeTest.spec.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 33129700
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "i-want-open-the-site-for-add-one-product-to-cart-and-then-buy-product-from-cart;buy-product-from-cart",
+        "keyword": "Scenario",
+        "line": 11,
         "name": "Buy product from cart",
         "steps": [
           {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 2488977700
-            }
-          },
-          {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "Given ",
             "line": 4,
-            "name": "buy product",
+            "name": "I navigate to the Website Home Page before login with user \"standard_user\" and password \"secret_sauce\"",
             "match": {
-              "location": "file:\\D:\\Programacion\\Autodidacta\\FrontSaucedmo\\src\\test\\steps\\BuySteps.ts:5"
+              "location": "file:\\D:\\basura\\SaucedemoPlaywrightTsCucumber\\src\\Tests\\HomeTest\\homeTest.spec.ts:8"
             },
             "result": {
               "status": "passed",
-              "duration": 4568957599
+              "duration": 2355227099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "buy product put first name \"Manuel\", last name \"Fajardo\" and postal code \"01\"",
+            "match": {
+              "location": "file:\\D:\\basura\\SaucedemoPlaywrightTsCucumber\\src\\Tests\\HomeTest\\homeTest.spec.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3375153999
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 5,
+            "line": 13,
             "name": "confirm buy",
             "match": {
-              "location": "file:\\D:\\Programacion\\Autodidacta\\FrontSaucedmo\\src\\test\\steps\\BuySteps.ts:30"
+              "location": "file:\\D:\\basura\\SaucedemoPlaywrightTsCucumber\\src\\Tests\\HomeTest\\homeTest.spec.ts:40"
             },
             "result": {
               "status": "passed",
-              "duration": 178733500
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 737324800
+              "duration": 1260442000
             }
           }
         ],
@@ -56,217 +116,136 @@
         "type": "scenario"
       }
     ],
-    "id": "comprar-productos-del-carrito",
+    "id": "i-want-open-the-site-for-add-one-product-to-cart-and-then-buy-product-from-cart",
     "line": 1,
     "keyword": "Feature",
-    "name": "Comprar productos del carrito",
+    "name": "I want open the Site for add one product to cart and then buy product from cart",
     "tags": [],
-    "uri": "src\\test\\features\\buy.feature"
+    "uri": "src\\Tests\\HomeTest.feature"
   },
   {
     "description": "",
     "elements": [
       {
         "description": "",
-        "id": "agregar-1-producto-al-carrito;add-1-product-to-cart",
+        "id": "i-want-to-login-into-the-site-with-valid-and-invalid-data;login-with-valid-user-name-and-password",
         "keyword": "Scenario",
-        "line": 3,
-        "name": "Add 1 product to cart",
+        "line": 6,
+        "name": "Login with valid user name and password",
         "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 2412990799
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 4,
-            "name": "I click in button add to cart",
-            "match": {
-              "location": "file:\\D:\\Programacion\\Autodidacta\\FrontSaucedmo\\src\\test\\steps\\CartSteps.ts:5"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1061280699
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 5,
-            "name": "View cart",
-            "match": {
-              "location": "file:\\D:\\Programacion\\Autodidacta\\FrontSaucedmo\\src\\test\\steps\\CartSteps.ts:10"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2326203900
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 891919500
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      }
-    ],
-    "id": "agregar-1-producto-al-carrito",
-    "line": 1,
-    "keyword": "Feature",
-    "name": "Agregar 1 producto al carrito",
-    "tags": [],
-    "uri": "src\\test\\features\\cart.feature"
-  },
-  {
-    "description": "",
-    "elements": [
-      {
-        "description": "",
-        "id": "error-al-hacer-login;login-with-invalid-user-name-and-password",
-        "keyword": "Scenario",
-        "line": 3,
-        "name": "login with invalid user name and password",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 2232587400
-            }
-          },
           {
             "arguments": [],
             "keyword": "Given ",
             "line": 4,
-            "name": "I open the login page",
+            "name": "I navigate to the Website Login Page",
             "match": {
-              "location": "file:\\D:\\Programacion\\Autodidacta\\FrontSaucedmo\\src\\test\\steps\\LoginSteps.ts:6"
+              "location": "file:\\D:\\basura\\SaucedemoPlaywrightTsCucumber\\src\\Tests\\LoginTest\\loginTest.spec.ts:7"
             },
             "result": {
               "status": "passed",
-              "duration": 1256089700
+              "duration": 2020582800
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 5,
-            "name": "I enter an invalid username and valid password",
+            "line": 7,
+            "name": "User enters username \"standard_user\" and password \"secret_sauce\"",
             "match": {
-              "location": "file:\\D:\\Programacion\\Autodidacta\\FrontSaucedmo\\src\\test\\steps\\LoginSteps.ts:18"
+              "location": "file:\\D:\\basura\\SaucedemoPlaywrightTsCucumber\\src\\Tests\\LoginTest\\loginTest.spec.ts:14"
             },
             "result": {
               "status": "passed",
-              "duration": 175589900
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 6,
-            "name": "I should see a login error message",
-            "match": {
-              "location": "file:\\D:\\Programacion\\Autodidacta\\FrontSaucedmo\\src\\test\\steps\\LoginSteps.ts:30"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1018525900
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 644281999
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      }
-    ],
-    "id": "error-al-hacer-login",
-    "line": 1,
-    "keyword": "Feature",
-    "name": "Error al hacer login",
-    "tags": [],
-    "uri": "src\\test\\features\\errorLogin.feature"
-  },
-  {
-    "description": "",
-    "elements": [
-      {
-        "description": "",
-        "id": "login-exitoso-en-la-página;login-with-valid-user-name-and-password",
-        "keyword": "Scenario",
-        "line": 3,
-        "name": "login with valid user name and password",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 2336889200
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 4,
-            "name": "I open the login page",
-            "match": {
-              "location": "file:\\D:\\Programacion\\Autodidacta\\FrontSaucedmo\\src\\test\\steps\\LoginSteps.ts:6"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1173959299
+              "duration": 141520899
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 5,
-            "name": "I enter a valid username and password",
+            "line": 8,
+            "name": "User clicks the login button",
             "match": {
-              "location": "file:\\D:\\Programacion\\Autodidacta\\FrontSaucedmo\\src\\test\\steps\\LoginSteps.ts:11"
+              "location": "file:\\D:\\basura\\SaucedemoPlaywrightTsCucumber\\src\\Tests\\LoginTest\\loginTest.spec.ts:19"
             },
             "result": {
               "status": "passed",
-              "duration": 242935399
+              "duration": 190900200
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 6,
+            "line": 9,
             "name": "I should be redirected to the inventory page",
             "match": {
-              "location": "file:\\D:\\Programacion\\Autodidacta\\FrontSaucedmo\\src\\test\\steps\\LoginSteps.ts:25"
+              "location": "file:\\D:\\basura\\SaucedemoPlaywrightTsCucumber\\src\\Tests\\LoginTest\\loginTest.spec.ts:23"
             },
             "result": {
               "status": "passed",
-              "duration": 1026420400
+              "duration": 20680299
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "i-want-to-login-into-the-site-with-valid-and-invalid-data;login-with-invalid-user-name-and-password",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Login with invalid user name and password",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I navigate to the Website Login Page",
+            "match": {
+              "location": "file:\\D:\\basura\\SaucedemoPlaywrightTsCucumber\\src\\Tests\\LoginTest\\loginTest.spec.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1915018600
             }
           },
           {
-            "keyword": "After",
-            "hidden": true,
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "User enters username \"locked_out_user\" and password \"secret_sauce\"",
+            "match": {
+              "location": "file:\\D:\\basura\\SaucedemoPlaywrightTsCucumber\\src\\Tests\\LoginTest\\loginTest.spec.ts:14"
+            },
             "result": {
               "status": "passed",
-              "duration": 646136299
+              "duration": 145611099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "User clicks the login button",
+            "match": {
+              "location": "file:\\D:\\basura\\SaucedemoPlaywrightTsCucumber\\src\\Tests\\LoginTest\\loginTest.spec.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 108823200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "I should see a login error message \"Epic sadface: Sorry, this user has been locked out.\"",
+            "match": {
+              "location": "file:\\D:\\basura\\SaucedemoPlaywrightTsCucumber\\src\\Tests\\LoginTest\\loginTest.spec.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 34590700
             }
           }
         ],
@@ -274,11 +253,11 @@
         "type": "scenario"
       }
     ],
-    "id": "login-exitoso-en-la-página",
+    "id": "i-want-to-login-into-the-site-with-valid-and-invalid-data",
     "line": 1,
     "keyword": "Feature",
-    "name": "Login exitoso en la página",
+    "name": "I want to login into the site with valid and invalid data",
     "tags": [],
-    "uri": "src\\test\\features\\login.feature"
+    "uri": "src\\Tests\\LoginTest.feature"
   }
 ]
